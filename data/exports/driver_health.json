@@ -1,0 +1,72 @@
+{
+  "north_star": {
+    "name": "Conversion Rate",
+    "value": 0.712,
+    "unit": "%",
+    "status": "at_risk"
+  },
+  "page_experience": {
+    "name": "Page Experience",
+    "status": "healthy",
+    "sub_drivers": {
+      "page_load_speed": {
+        "value": 1861.0,
+        "unit": "ms",
+        "status": "healthy"
+      },
+      "bounce_rate": {
+        "value": 35.04,
+        "unit": "%",
+        "status": "healthy"
+      },
+      "mobile_experience": {
+        "value": 0.59,
+        "unit": "%",
+        "status": "healthy"
+      }
+    }
+  },
+  "price_value": {
+    "name": "Price & Value",
+    "status": "healthy",
+    "sub_drivers": {
+      "revenue_per_session": {
+        "value": 8.96,
+        "unit": "\u20b9",
+        "status": "healthy"
+      },
+      "electronics_cr": {
+        "value": 0.715,
+        "unit": "%",
+        "status": "healthy"
+      }
+    }
+  },
+  "discovery": {
+    "name": "Discovery",
+    "status": "healthy",
+    "sub_drivers": {
+      "organic_share": {
+        "value": 30.0,
+        "unit": "%",
+        "status": "healthy"
+      },
+      "paid_cr": {
+        "value": 0.73,
+        "unit": "%",
+        "status": "healthy"
+      }
+    }
+  },
+  "product_quality": {
+    "name": "Product Quality",
+    "status": "healthy",
+    "sub_drivers": {
+      "avg_steps_completed": {
+        "value": 2.33,
+        "unit": "steps",
+        "status": "healthy"
+      }
+    }
+  }
+}

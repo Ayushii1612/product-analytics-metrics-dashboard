@@ -1,0 +1,52 @@
+======================================================================
+   FEATURE LAUNCH IMPACT ANALYSIS REPORT
+   Feature: New Checkout Flow | Launch: 2024-05-01
+======================================================================
+
+RECOMMENDATION: 🚀 SHIP IT — Full rollout recommended
+RATIONALE: The new checkout feature shows a statistically significant conversion rate improvement with no guardrail metric regressions.
+
+────────────────────────────────────────────────────────────
+PRIMARY METRIC: CONVERSION RATE
+────────────────────────────────────────────────────────────
+  Pre-launch CR        : 0.6728%
+  Post-launch CR       : 0.7472%
+  Absolute Change      : +0.0744pp
+  Relative Lift        : +11.05%
+  95% CI               : [+0.0323pp, +0.1165pp]
+  Z-Statistic          : -3.451
+  P-Value              : 0.00055852
+  VERDICT              : SIGNIFICANT IMPROVEMENT ✅
+
+────────────────────────────────────────────────────────────
+GUARDRAIL METRICS
+────────────────────────────────────────────────────────────
+  Page Load Time (ms)                 ✅ PASSED — Load time improved
+    Pre: 1959.7 → Post: 1663.4  (-15.12%)
+  Bounce Rate                         ✅ PASSED — Bounce rate held/improved
+    Pre: 35.073 → Post: 34.919  (-0.153pp)
+  Revenue Per Session (₹)             ✅ PASSED — Revenue per session improved
+    Pre: 8.33 → Post: 9.47  (+13.76%)
+
+────────────────────────────────────────────────────────────
+SIDE EFFECTS — SEGMENT-LEVEL ANALYSIS
+────────────────────────────────────────────────────────────
+  Device: mobile                      Lift: +9.62%  ✅ OK
+  Device: desktop                     Lift: +9.72%  ✅ OK
+  Device: tablet                      Lift: +28.05%  ✅ OK
+  Source: social                      Lift: +15.72%  ✅ OK
+  Source: organic_search              Lift: +12.16%  ✅ OK
+  Source: paid_search                 Lift: +19.21%  ✅ OK
+  Source: email                       Lift: +1.40%  ✅ OK
+  Source: referral                    Lift: +12.44%  ✅ OK
+  Source: direct                      Lift: -5.09%  ⚠️ Regression on segment
+
+────────────────────────────────────────────────────────────
+NEXT STEPS
+────────────────────────────────────────────────────────────
+  1. Monitor conversion rate for 2 more weeks post-launch
+  2. Set up automated alerts for >2σ deviation in daily CR
+  3. Investigate mobile segment for any remaining gap vs desktop
+  4. Run qualitative research (session recordings) on new checkout flow
+  5. Track revenue per session weekly — watch for AOV changes
+======================================================================

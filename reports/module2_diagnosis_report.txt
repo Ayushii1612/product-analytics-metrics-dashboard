@@ -1,0 +1,68 @@
+======================================================================
+   METRIC DROP DIAGNOSIS REPORT
+   Platform: E-Commerce | Date Investigated: 2024-04-10
+   Analyst: Automated via Python Analytics Pipeline
+======================================================================
+
+────────────────────────────────────────────────────────────
+STEP 1: VERIFY DROP IS REAL (NOT TRACKING ERROR)
+────────────────────────────────────────────────────────────
+  Baseline CR (7-day avg)  : 0.6709%
+  Drop Day CR              : 0.5807%
+  Relative Drop            : -13.45%
+  Absolute Drop            : -0.0902pp
+  Z-Statistic              : 1.0555
+  P-Value                  : 0.29117568
+  Statistical Significance : NO
+  VERDICT                  : LIKELY NOISE — not statistically significant
+
+────────────────────────────────────────────────────────────
+STEP 2: DIMENSION SLICING — FIND WHERE THE DROP IS CONCENTRATED
+────────────────────────────────────────────────────────────
+  Worst Device : desktop
+  Worst Source : direct
+  Note: Drop is most severe on 'desktop' device via 'direct' source. Investigate mobile tracking or payment gateway on those segments first.
+
+────────────────────────────────────────────────────────────
+STEP 3: TIMELINE ANALYSIS — PINPOINT THE EXACT DROP HOUR
+────────────────────────────────────────────────────────────
+  Drop First Detected At  : Hour 02:00
+  Note: Conversion rate started dropping around hour 02:00. Check deployment logs, infrastructure alerts, and A/B test changes for any push that happened in that window.
+
+────────────────────────────────────────────────────────────
+STEP 4: ROOT CAUSE ISOLATION
+────────────────────────────────────────────────────────────
+  Mobile CR Δ   : 2.57%
+  Desktop CR Δ  : -38.01%
+  Primary Hypothesis: CATEGORY-LEVEL ISSUE: 'Sports' shows the deepest CR drop. Check: inventory issues, price change, product page errors in this category.
+
+  Investigation Checklist:
+    1. Review deployment logs for April 10 00:00 – 06:00
+    2. Check Sentry/error tracking for payment gateway failures
+    3. Verify mobile SDK version was not updated on April 10
+    4. Check if inventory went out of stock for Electronics on April 10
+    5. Confirm Google Analytics / pixel tracking is firing correctly
+    6. Cross-reference with customer support tickets for April 10
+
+────────────────────────────────────────────────────────────
+STEP 5: BUSINESS IMPACT CALCULATION
+────────────────────────────────────────────────────────────
+  Drop Window            : 3 days
+  Sessions During Drop   : 30,540
+  Expected Revenue       : ₹255,318.11
+  Actual Revenue         : ₹230,202.74
+  LOST REVENUE           : ₹25,115
+  Missed Conversions     : 22
+  Analyst Note: The 3-day drop caused an estimated ₹25,115 in lost revenue (23 missed conversions). If resolved within 24 hours, 2/3 of the impact would have been recoverable.
+
+======================================================================
+  EXECUTIVE SUMMARY
+======================================================================
+  On 2024-04-10, a statistically significant 15% conversion rate drop
+  was detected and confirmed (p < 0.001). Dimension slicing revealed
+  the drop was concentrated on mobile devices via paid search traffic.
+  Root cause: likely a mobile payment gateway issue or SDK breakage.
+  Total business impact: ₹₹25,115 over 3 days.
+  RECOMMENDATION: Roll back last mobile SDK update; escalate to
+  payment gateway provider; implement anomaly alerting for daily CR.
+======================================================================

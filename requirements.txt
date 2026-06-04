@@ -1,0 +1,15 @@
+pandas
+numpy
+scipy
+statsmodels
+scikit-learn
+faker
+matplotlib
+seaborn
+openpyxl
+xlsxwriter
+anthropic
+python-dotenv
+sqlalchemy
+duckdb
+tqdm

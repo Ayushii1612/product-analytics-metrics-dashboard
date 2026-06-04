@@ -1,0 +1,14 @@
+AUTOMATED WEEKLY INSIGHT SUMMARIES — Claude API
+============================================================
+
+── WEEK 1 ──
+⚠️  ANTHROPIC_API_KEY not set. Add it to .env to enable weekly insights.
+
+── WEEK 2 ──
+⚠️  ANTHROPIC_API_KEY not set. Add it to .env to enable weekly insights.
+
+── WEEK 3 ──
+⚠️  ANTHROPIC_API_KEY not set. Add it to .env to enable weekly insights.
+
+── WEEK 4 ──
+⚠️  ANTHROPIC_API_KEY not set. Add it to .env to enable weekly insights.

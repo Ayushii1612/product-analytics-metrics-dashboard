@@ -1,0 +1,113 @@
+{
+  "north_star": {
+    "north_star_metric": "Conversion Rate",
+    "overall_cr": 0.712,
+    "avg_daily_cr": 0.71,
+    "cr_std": 0.0985,
+    "total_sessions": 2000000,
+    "total_conversions": "14245",
+    "total_revenue_inr": 17925191.12
+  },
+  "level1_drivers": [
+    {
+      "driver": "Page Experience",
+      "health": "\u2705 Healthy",
+      "level2": {
+        "page_load_speed": {
+          "value": "1861ms avg",
+          "benchmark": "< 2500ms",
+          "status": "\u2705",
+          "correlation_with_cr": 0.0,
+          "p_value": 0.969125
+        },
+        "bounce_rate": {
+          "value": "35.04%",
+          "benchmark": "< 40%",
+          "status": "\u2705"
+        },
+        "mobile_experience": {
+          "mobile_cr": "0.590%",
+          "desktop_cr": "0.959%",
+          "gap_vs_desktop": "0.369pp",
+          "status": "\u2705"
+        }
+      }
+    },
+    {
+      "driver": "Price & Value",
+      "health": "\u2705 Healthy",
+      "level2": {
+        "revenue_per_session": {
+          "value": "\u20b98.96",
+          "benchmark": "> \u20b940",
+          "status": "\u26a0\ufe0f"
+        },
+        "category_aov": {
+          "Beauty": 1272.29,
+          "Books": 1233.09,
+          "Electronics": 1267.1,
+          "Fashion": 1246.98,
+          "Home & Kitchen": 1256.13,
+          "Sports": 1267.78
+        },
+        "traffic_source_cr": {
+          "direct": 0.715,
+          "email": 0.712,
+          "organic_search": 0.69,
+          "paid_search": 0.73,
+          "referral": 0.719,
+          "social": 0.723
+        }
+      }
+    },
+    {
+      "driver": "Discovery",
+      "health": "\u2705 Healthy",
+      "level2": {
+        "traffic_mix": {
+          "direct": 10.01,
+          "email": 11.99,
+          "organic_search": 30.0,
+          "paid_search": 21.99,
+          "referral": 8.01,
+          "social": 18.0
+        },
+        "organic_share": {
+          "value": "30.0%",
+          "status": "\u2705"
+        },
+        "paid_efficiency": {
+          "paid_cr": "0.730%",
+          "organic_cr": "0.690%",
+          "paid_vs_organic": "+0.040pp"
+        }
+      }
+    },
+    {
+      "driver": "Product Quality",
+      "health": "\u2705 Healthy",
+      "level2": {
+        "category_conversion_rates": {
+          "Beauty": 0.704,
+          "Books": 0.74,
+          "Electronics": 0.715,
+          "Fashion": 0.7,
+          "Home & Kitchen": 0.726,
+          "Sports": 0.701
+        },
+        "funnel_steps_distribution": {
+          "1": 35.04,
+          "2": 24.98,
+          "3": 20.02,
+          "4": 11.99,
+          "5": 7.98
+        },
+        "return_visitor_cr": {
+          "returning_cr": "0.713%",
+          "new_visitor_cr": "0.708%",
+          "loyalty_lift": "+0.005pp"
+        }
+      }
+    }
+  ]
+}
